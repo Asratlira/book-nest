@@ -39,7 +39,7 @@ const ListedBooks = () => {
         </TabList>
 
         <TabPanel>
-          <h2 className="text-2xl my-4 ">Add To Cart List :{addCart.length}</h2>{" "}
+          <h2 className="text-2xl my-4 ">Cart List :{addCart.length}</h2>{" "}
           <div>
             {addCart.map((book) => (
               <Book key={book.bookId} book={book}></Book>
@@ -47,7 +47,7 @@ const ListedBooks = () => {
           </div>
         </TabPanel>
         <TabPanel>
-          <h2 className="text-2xl my-4">Remind Me Later :{addWish.length} :</h2>
+          <h2 className="text-2xl my-4">Remind Me Later :{addWish.length}</h2>
           {addWish.map((book) => (
             <Book key={book.bookId} book={book}></Book>
           ))}
